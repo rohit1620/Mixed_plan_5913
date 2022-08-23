@@ -9,7 +9,7 @@
 }
 #upcoming{
    
-    border:1px solid red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width:1000px;
     height:2000px;
     margin:auto;
@@ -21,7 +21,7 @@
     border:1px solid #FFB700;
     gap:10px;
     margin: 10px;
-    background-color: rgb(46, 44, 44);
+    background-color: rgb(53, 51, 51);
     cursor:pointer;
     border-radius: 10px;
    
@@ -29,7 +29,7 @@
 #upcomingdetails{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border:1px solid blue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width:1000px;
     height:800px;
     margin:auto;
@@ -37,7 +37,7 @@
 }
 .ptag{
     color:grey;
-    
+    font-size:26px;
 }
 .headupcoming>p{
     text-align: center;
@@ -101,6 +101,7 @@ font-weight: bold;
     text-align: center;
     border-radius: 10px;
     background-color: #FFB700;
+    /* font-size:10px; */
 }
 .imag3{
     width:20px;
@@ -111,6 +112,7 @@ font-weight: bold;
     text-align: center;
    color:whitesmoke;
     margin-bottom: -15px;
+    
 }
 .absp{
     position: absolute;
@@ -133,4 +135,48 @@ font-weight: bold;
     font-size:30px;
     margin-right:4px;
     font-weight: bold;
+}
+.upcome{
+    color:#FFFFFF;
+    background-color: rgb(44, 42, 42);
+}
+#completedmatches{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:700px;
+    gap: top 20px;
+}
+#completedmatches>div{
+    width:450px;
+    height:150px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    margin-left:10px;
+    border-radius: 10px;
+    gap:5px;
+}
+.oneLine{
+    display: flex;
+    margin-left: 50px;
+    gap:5px;
+}
+.teamcircle>h2{
+    margin-top:0px;
+    border:1px solid transparent;
+    border-radius: 20px;
+    height:40px;
+    padding:5px;
+    display:flex;
+    align-items: center;
+    
+}
+#fantasypreview{
+    height: 210px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display:flex;
+    
+}
+.description{
+    display:flex;
 }
