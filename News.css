@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#container {
+  width: 976px;
+  margin: auto;
+  height: 100vh;
+  border: 2px solid black;
+}
+#header {
+  font-size: 26.8px;
+  font-weight: 700;
+  font-family: Montserrat;
+  color: rgb(57, 57, 57);
+}
+#news-button {
+  width: auto;
+  height: 50px;
+  padding: 8px 0px 8px 0px;
+  display: flex;
+  justify-items: center;
+}
+#news-button > div {
+  width: 780px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+#news-button > div > button {
+  width: 140px;
+  height: 34px;
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
