@@ -180,3 +180,106 @@ font-weight: bold;
 .description{
     display:flex;
 }
+/* shedule style */
+.btntype{
+    padding:10px;
+    font-size:25px;
+    width:200px;
+    background-color: white;
+   height:45px;
+   
+  
+}
+.btntype2{
+    color:white;
+    background-color: rgb(168, 11, 11);
+    margin-left:-20px;
+    border:0px;
+}
+.btntype3{
+    margin-left:170px;
+}
+#highlightofs{
+    margin-left:400px;
+}
+#sche{
+    margin-left:380px;
+    color:rgb(43, 40, 40);
+}
+.matchDetails{
+    width:1000px;
+    height:400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left:380px;
+    margin-top:20px;
+    cursor:pointer;
+}
+.hedlight{
+    display: flex;
+    gap:20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.intBtn{
+    width:100px;
+    padding:10px;
+    color:aliceblue;
+    background-color: rgb(168, 11, 11);
+    margin:10px 0 5px 10px;
+    border:0px;
+    border-radius:5px;
+    height:50px;
+}
+.gridmatchdel{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border:1px solid blue; */
+    height:250px;
+    margin-top:10px;
+    gap:10px;
+}
+.firstBox{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+}
+.btnodi{
+    display:flex;
+    gap:10px;
+    padding:5px;
+    height:30px;
+}
+.locacoun{
+    display:flex;
+    height:30px;
+}
+.countwithflag{
+    display:flex;
+    height:40px;
+    gap:10px;
+}
+.lineperce{
+    display:flex;
+    width:300px;
+    /* height:2px; */
+    margin-left:15px;
+    margin-top:25px;
+    /* background-color:red; */
+    /* border:1px solid red; */
+}
+.firstred{
+ width:30%;
+   background-color:red;
+
+}
+.firstgreen{
+   width:70%;
+   /* background-color:green; */
+   border:1px solid #15ce5f;
+}
+.percentagewin{
+    display:flex;
+   justify-content: space-between;
+   height:10px;
+   margin-top:-10px;
+   margin-left:10px;
+   margin-right:10px;
+}
