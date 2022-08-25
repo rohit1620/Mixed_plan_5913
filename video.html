@@ -12,21 +12,39 @@
             background-color: blue;
         }
         #red{
-            height: 100px;
-            background-color: red;
+            height: 150px;
+            background-color: rgb(192, 26, 26);
             padding-top: 40px;
         }
         #red>div{
             width: 70%;
             margin: auto;
-            border: 1px solid black;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             height: 420px;
-            background-color: black;
+            /* background-color: black; */
             /* padding-top: 30px; */
         }
 
         #big{
             height: 500px;
+        }
+
+
+        #iframe>iframe{
+            height: 360px;
+            width: 100%;
+        }
+        #btn{
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+            margin: auto;
+            padding-top: 20px;
+        }
+        #btn>button{
+            background-color: white;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -34,10 +52,20 @@
     <div id="navbar"></div>
  <div id="big">
     <div id="red">
-        <div></div>
+        <div id="iframe"></div>
     </div>
 </div>
-    <div id="cont"></div>
+
+    <div id="cont">
+        <div id="btn">
+            <button>LATEST</button>
+            <button>FANTASY</button>
+            <button>MATCHRELATED</button>
+            <button>NEWS</button>
+            </div>
+ <div>____________________________________________________________________________________________________________________</div>
+    </div>
 </body>
 </html>
 <script src="./scripts.js/video.js"></script>
+

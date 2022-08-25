@@ -12,6 +12,7 @@
     display: flex;
     width: 100%;
     gap: 20px;
+    cursor: pointer;
 }
 #cont>div>.ifram{
     width: 25%;
@@ -21,7 +22,7 @@
     width: 75%;
     height: 100%;
 }
-#cont>div>.ifram>iframe{
+#cont>div>.ifram>img{
     width: 100%;
     height: 100%;
 }
