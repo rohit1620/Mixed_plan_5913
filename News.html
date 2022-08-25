@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
     <link rel="stylesheet" href="News.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Pacifico&family=Roboto:wght@400;500&family=Ubuntu:wght@300&family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="container">
+      <!-- Headline of the page -->
       <h1 id="header">News & Articles</h1>
+      <!-- News for different categeory -->
       <div id="news-button">
         <div>
-          <button>LATEST</button>
-          <button>NEWS</button>
-          <button>ON THIS DAY</button>
-          <button>MATCH RELATED</button>
-          <button>FEATURES</button>
+          <button onclick="latest()">LATEST</button>
+          <button onclick="news()">NEWS</button>
+          <button onclick="onthisday()">ON THIS DAY</button>
+          <button onclick="matchrelated()">MATCH RELATED</button>
+          <button onclick="features()">FEATURES</button>
         </div>
       </div>
+      <!-- Append news card to the body -->
+      <div id="all-news"></div>
     </div>
   </body>
 </html>
