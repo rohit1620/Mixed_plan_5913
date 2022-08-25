@@ -4,84 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>footer</title>
+    <link rel="stylesheet" href="./styles/footer.css"> 
 </head>
-<style>
-    
-/* ===============Footer Part======================================= */
-
-#footer{
-    display: flex;
-    align-items: center;
-    background-color: rgba(23, 33, 50, 255);
-    height: 100px;
-    /* width: 100%; */
-    margin-right: -.8%;
-    margin-left: 0px;
-    }
-    #div_1{
-        margin-left:10vw;
-        font-family: Montserrat;
-        color: white;
-    }
-    #div_1 p{
-        font-size:12px;
-    }
-    
-    #div_2{
-        margin-left:10vw;
-        font-family: Montserrat;
-        }
-        #div_2 a{
-            color: white; 
-            text-decoration:none;
-            margin-right:10px;
-            font-size:14px;
-        } 
-        #div_2 a:hover{
-            color:orangered;
-    
-        }
-    #div_3{
-        margin-left:10vw;
-        font-family: Montserrat;
-        color: rgb(218, 216, 216);
-
-    }
-    #flex{
-        display: flex;
-        gap: 10px;
-    }
-
-
-</style>
 <body>
 
 
     
 <!-- Footer Part -->
-<footer id="footer">
-    <div id="div_1">
-     <img src="https://www.cricket.com/static/svgs/cricket-logo.svg">
-      <p>Cricket like never before</p>
-      </div>
+<div id="footer">
+    
   
-    <div id="div_2">
-        <a href="https:"#">Term of use</a>
-        <a href="https:"#">Privacy Policy</a>
-        <a href="https:"#">Cookies Policy</a>
-    </div>
-    <div id="div_3">
-        <div id="flex">
-        <h5>follow us on</h5>
-        <img src="https://www.cricket.com/svgs/facebook.svg">
-        <img src="https://www.cricket.com/svgs/twitter.svg">
-        <img src="https://www.cricket.com/svgs/linkedin.svg">
-        </div>
-        <p>@2020 Cricket.com | All right reserved</p>
-    </div>
-  
-  </footer>
+</div>
   
   
   <!-- End Footer Part -->
@@ -89,3 +23,8 @@
     
 </body>
 </html>
+<script type="module">
+    import footer from '../component/footer.js';
+     console.log(footer());
+     document.getElementById('footer').innerHTML=footer();
+</script>
