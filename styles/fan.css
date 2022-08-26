@@ -6,6 +6,7 @@
     margin:auto;
     display: flex;
     align-items: center;
+   
 }
 #upcoming{
    
@@ -81,6 +82,7 @@
     margin-left:2px;
     font-weight: bold;
 }
+
 .upmargin{
 margin-top:5px;
 font-size:25px;
@@ -205,6 +207,7 @@ font-weight: bold;
 #sche{
     margin-left:380px;
     color:rgb(43, 40, 40);
+    margin-top:50px;
 }
 .matchDetails{
     width:1000px;
@@ -279,11 +282,87 @@ font-weight: bold;
     display:flex;
    justify-content: space-between;
    height:10px;
-   margin-top:-10px;
+   margin-top:10px;
    margin-left:10px;
    margin-right:10px;
 }
 #imgint{
     margin-left:380px;
     width:980px;
+}
+#slide{
+    margin-top:100px;
+}
+
+/* ranking */
+#teamrank{
+    display: flex;
+    margin-left:300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width:1000px;
+}
+
+#container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width:1000px;
+    height:900px;
+    margin-left:300px;
+}
+.reankingteam{
+    display: flex;
+    border:1px solid rgb(59, 56, 56);
+    gap:5px;
+    height:50px;
+    padding: 5px;
+}
+.imagewidth{
+    width:50px;
+    height:40px;
+    margin-left:300px;
+    margin-top:5px;
+}
+.signtodel{
+    margin-left:460px;
+}
+
+.countOrigin{
+    margin-top:10px;
+    padding:5px;
+    margin-left:10px;
+    font-family: "Montserrat";
+}
+
+#ODI{
+    margin-left:300px;
+    margin-bottom:10px;
+    padding:10px;
+    width:200px;
+    color:white;
+    background-color: rgb(173, 10, 10);
+    border:0px;
+    cursor: pointer;
+}
+#TEST{
+    margin-left:30px;
+    margin-bottom:10px;
+    padding:10px;
+    width:200px;
+    color:white;
+    background-color: blue;
+    border:0px;
+    cursor: pointer;
+}
+#T20{
+    margin-left:30px;
+    margin-bottom:10px;
+    padding:10px;
+    width:200px;
+    color:white;
+    background-color: green;
+    border:0px;
+    cursor: pointer;
+}
+.teamrankingNum{
+    font-size:20px;
+    margin-top: 20px;
 }

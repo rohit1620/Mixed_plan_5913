@@ -4,36 +4,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css"/> 
+    <link rel="stylesheet" href="./styles/footer.css"/> 
+    <link rel="stylesheet" href="./styles/fan.css"/> 
     <style>
-        #teamrank{
-            display: flex;
-           justify-content:space-around;
-           margin-right:900px;
-        }
+       
+       
     </style>
 </head>
 <body>
     <div id="navbar"></div>
-    <h1>Ranking</h1>
-    <button>ODI</button>
-    <button>TEST</button>
-    <button>T20</button>
+    <h1 style="margin-left:300px;color:rgb(19, 13, 13);margin-top:100px;">Ranking</h1>
+    <button onclick="changeranking(this.id)" id="ODI">ODI</button>
+    <button onclick="changeranking(this.id)" id="TEST">TEST</button>
+    <button onclick="changeranking(this.id)" id="T20">T20</button>
 <div id="teamrank">
-    <p>RANK</p>
-    <p>TEAMS</p>
+    <p style="margin-left:15px;">RANK</p>
+    <p style="margin-left:310px;">TEAMS</p>
 </div>
 <div id="container"></div>
 
     <div id="footer"></div>
 </body>
 </html>
-<script>
+<script type="module">
+
+import navbar from "./component/navbar.js";
+document.querySelector("#navbar").innerHTML=navbar();
+
+import footer from "./component/footer.js";
+document.querySelector("#footer").innerHTML=footer();
+
+
+
     window.addEventListener("load",()=>{
         getData()
     })
     
     let getData=async()=>{
-        let res=await fetch("http://localhost:3000/api/ranking");
+        let res=await fetch("https://infinite-brushlands-51927.herokuapp.com/api/ranking?type=ODI");
         let data=await res.json();
         console.log(data)
         renderDom(data)
@@ -45,15 +58,19 @@
 
             let ranking=document.createElement("p");
             ranking.innerText=rank;
+            ranking.setAttribute("class","teamrankingNum");
 
             let image=document.createElement("img");
             image.src=img;
+            image.setAttribute("class","imagewidth")
 
             let countryn=document.createElement("p");
             countryn.innerText=country;
+            countryn.setAttribute("class","countOrigin")
 
-            let signing=document.createElement("p");
+            let signing=document.createElement("h1");
             signing.innerText=sign;
+            signing.setAttribute("class","signtodel")
 
 
             let div=document.createElement("div");
@@ -65,31 +82,13 @@
         })
     }
 
+let changeranking=async(id)=>{
+let res=await fetch(`https://infinite-brushlands-51927.herokuapp.com/api/ranking?type=${id}`)
+res=await res.json();
+renderDom(res)
 
-
-let rankingTeam=async()=>{
-let data={
-    rank,img,country,sign
-}
-    let res=await fetch("http://localhost:3000/api/ranking",{
-        method:"POST",
-        body:JSON.stringify(data),
-        headers:{
-            "Content-Type":"application/json",
-        },
-    });
-    getData();
-    res=await res.json();
-    console.log(res)
 }
 
 
 
-
-
-//     country: "NEWZEALAND"
-// img: "https://images.cricket.com/teams/5_flag_safari.png"
-// rank: 1
-// sign: ">"
-// type: "ODI"
 </script>
