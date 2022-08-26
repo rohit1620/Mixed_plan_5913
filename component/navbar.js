@@ -112,15 +112,15 @@ function navbar() {
 <div class="drop_Down_Bar">
   <ul>
       <li>    <a href='stadiums.html'>
-        <img src="https://www.cricket.com/svgs/icons/stadium-icon.svg" />     <a style="margin-left: 10px; font-size: 17px; ">stadiums</a>
+        <img src="https://www.cricket.com/svgs/icons/stadium-icon.svg" />     <a style="margin-left: 10px; font-size: 17px;color:white; ">stadiums</a>
       </li></a>
-      <li><a href='Rankings.html'><img  src="https://www.cricket.com/svgs/icons/rankings-icon.svg" />     <a style="margin-left: 10px; font-size: 17px; ">Rankings</a>
+      <li><a href='Rankings.html'><img  src="https://www.cricket.com/svgs/icons/rankings-icon.svg" />     <a style="margin-left: 10px; font-size: 17px; color:white; ">Rankings</a>
       </li></a>
-      <li><a href='Archives.html'><img  src="https://www.cricket.com/svgs/GroupArchive.svg" />         <a style="margin-left: 10px; font-size: 17px; ">Archives</a>
+      <li><a href='Archives.html'><img  src="https://www.cricket.com/svgs/GroupArchive.svg" />         <a style="margin-left: 10px; font-size: 17px;color:white; ">Archives</a>
       </li></a>
-      <li><a href='Records.html'><img  src="https://www.cricket.com/svgs/icons/records-icon.svg" />   <a style="margin-left: 10px; font-size: 17px; ">Records</a>
+      <li><a href='Records.html'><img  src="https://www.cricket.com/svgs/icons/records-icon.svg" />   <a style="margin-left: 10px; font-size: 17px;color:white; ">Records</a>
       </li></a>
-      <li><a href='login.html'><img  src="https://www.cricket.com/static/svgs/icons/profile.svg" />    <a style="margin-left: 10px; font-size: 17px; ">Profile</a>
+      <li><a href='login.html'><img  src="https://www.cricket.com/static/svgs/icons/profile.svg" />    <a style="margin-left: 10px; font-size: 17px;color:white; ">Profile</a>
       </li></a>
       
   </ul>
