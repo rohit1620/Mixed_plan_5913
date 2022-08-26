@@ -1,0 +1,128 @@
+#series-container {
+  width: 1076px;
+  margin: auto;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Vollkorn", serif;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+#header-series {
+  width: 1076px;
+  margin: auto;
+}
+
+#match-heading {
+  margin-top: 10px;
+  display: flex;
+}
+#match-heading > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
+  height: 35px;
+}
+#match-categeory {
+  width: 88%;
+  height: 65px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+#match-categeory > #matches {
+  width: 90%;
+}
+/* #matches > h3 {
+  width: auto;
+} */
+#matches > h3 {
+  width: auto;
+  margin-left: 8px;
+  padding: 8px;
+  font-size: 13px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+#matches > h3:nth-child(1) {
+  width: 80px;
+  background-color: #db2121;
+  color: white;
+}
+#matches > h3:nth-child(2) {
+  width: 160px;
+  background-color: rgb(161, 222, 161);
+  color: white;
+}
+#matches > h3:nth-child(3) {
+  width: 160px;
+  background-color: grey;
+  color: white;
+}
+#matches > h3:nth-child(4) {
+  width: 160px;
+  background-color: orange;
+  color: white;
+}
+
+#match-categeory > div {
+  display: flex;
+}
+#play-matches {
+  width: 850px;
+  margin: auto;
+  height: 80vh;
+  overflow: scroll;
+}
+#play-matches::-webkit-scrollbar {
+  display: none;
+}
+
+#series-card {
+  width: 100%;
+  margin: auto;
+  height: 120px;
+  margin-top: 10px;
+  display: flex;
+}
+
+#series-card > #match-name {
+  width: 75%;
+}
+#match-name > div {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+}
+#match-name > div > p:nth-child(1) {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0dede;
+  border-radius: 75%;
+  margin-right: 5px;
+}
+#match-name > div > p:nth-child(2) {
+  margin-top: 2px;
+}
+#match-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+#match-date > h5 {
+  font-size: 18px;
+}
+#match-date > p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
