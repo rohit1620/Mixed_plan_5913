@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <style>
+        #teamrank{
+            display: flex;
+           justify-content:space-around;
+           margin-right:900px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1>Ranking</h1>
+    <button>ODI</button>
+    <button>TEST</button>
+    <button>T20</button>
+<div id="teamrank">
+    <p>RANK</p>
+    <p>TEAMS</p>
+</div>
+<div id="container"></div>
+
+    <div id="footer"></div>
+</body>
+</html>
+<script>
+    window.addEventListener("load",()=>{
+        getData()
+    })
+    
+    let getData=async()=>{
+        let res=await fetch("http://localhost:3000/api/ranking");
+        let data=await res.json();
+        console.log(data)
+        renderDom(data)
+    }
+    let renderDom=(data)=>{
+        let container=document.querySelector("#container");
+        container.innerHTML=null;
+        data.forEach(({rank,img,country,sign})=>{
+
+            let ranking=document.createElement("p");
+            ranking.innerText=rank;
+
+            let image=document.createElement("img");
+            image.src=img;
+
+            let countryn=document.createElement("p");
+            countryn.innerText=country;
+
+            let signing=document.createElement("p");
+            signing.innerText=sign;
+
+
+            let div=document.createElement("div");
+            div.setAttribute("class","reankingteam");
+
+            div.append(rank,image,countryn,signing);
+
+            container.append(div);
+        })
+    }
+
+
+
+let rankingTeam=async()=>{
+let data={
+    rank,img,country,sign
+}
+    let res=await fetch("http://localhost:3000/api/ranking",{
+        method:"POST",
+        body:JSON.stringify(data),
+        headers:{
+            "Content-Type":"application/json",
+        },
+    });
+    getData();
+    res=await res.json();
+    console.log(res)
+}
+
+
+
+
+
+//     country: "NEWZEALAND"
+// img: "https://images.cricket.com/teams/5_flag_safari.png"
+// rank: 1
+// sign: ">"
+// type: "ODI"
+</script>
