@@ -1,0 +1,84 @@
+#conts{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(auto,200px);
+    row-gap: 10px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 40px;
+    background-color: white;
+    margin-top: -30px;
+}
+#conts>div{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    cursor: pointer;
+}
+#conts>div>.ifram{
+    width: 25%;
+    height: 100%;
+}
+#conts>div>.div2{
+    width: 75%;
+    height: 100%;
+}
+#conts>div>.ifram>img{
+    width: 100%;
+    height: 100%;
+}
+#conts>div>.div2>h3{
+    margin-bottom: 15px;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+
+
+/* iframe part  */
+
+
+#red{
+    height: 150px;
+    background-color: rgb(192, 26, 26);
+    padding-top: 40px;
+}
+#red>div{
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 420px;
+    /* background-color: black; */
+    /* padding-top: 30px; */
+}
+
+#big{
+    height: 500px;
+    margin-top: 70px;
+   
+}
+#iframe{
+    background-color: white;
+}
+
+#iframe>iframe{
+    height: 360px;
+    width: 100%;
+    background-color: white;
+}
+#btn{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+}
+#btn>button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}

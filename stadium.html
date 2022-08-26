@@ -4,20 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+     <link rel="stylesheet" href="./styles/stadium.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Stadium</title>
     <style>
-        #main{
-            
-        }
+       
     </style>
 </head>
 <body>
+    <div id="navbar">
+
+    </div>
    <div id="main">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    
+<div id="div1">
+    <h3>Popular Stadium</h3>
+    <div id="one">
+        
+    </div>
+</div>
+<div id="div2">
+    <h3>Iconic Venues</h3>
+    <div id="two">
+        
+    </div>
+</div>
+<div id="div3">
+    <h3>IPL Venues</h3>
+    <div id="three">
+        
+    </div>
+</div>
+<div id="div4">
+    <h3>CPL Venues</h3>
+    <div id="four">
+        
+    </div>
+</div>
    </div>
+   <!-- Footer Part -->
+<div id="footer">
+    
+  
+</div>
 </body>
 </html>
-<script src="./scripts.js/stadium.js"></script>
+<script type="module">
+
+    import navbar from './component/navbar.js';
+    // console.log(header());
+    let nav = document.getElementById('navbar')
+    nav.innerHTML = navbar()
+
+
+    import footer from './component/footer.js';
+    //  console.log(footer());
+    document.getElementById('footer').innerHTML = footer()
+   
+</script>
+<script src="./scripts/stadium.js"></script>

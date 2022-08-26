@@ -41,7 +41,7 @@ div.onclick = () => {
 };
 
 
-document.getElementById("cont").append(div)
+document.getElementById("conts").append(div)
 
 });
 };
