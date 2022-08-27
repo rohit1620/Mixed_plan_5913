@@ -7,6 +7,8 @@ function confirm(){
   console.log("your input is ",input)
 
 if(otp == input){
+  alert('login Succefully')
+
    window.location.href='index.html'
 }
 else{

@@ -27,7 +27,7 @@
        margin-bottom: 1rem;
    }
    #flag>img{
-       width: 10px;
+       width: 2px;
 
    }
    #btn{
@@ -36,8 +36,9 @@
        color:white;
        font-family:Montserrat;
        margin: 20px 130px; 
-       border-radius: 5px;
+       border-radius: 20px;
        padding: 10px;
+       border: 0px;
 }
 #input{
     /* font-family:Montserrat;
