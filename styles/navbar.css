@@ -1,8 +1,4 @@
-/* * {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Montserrat", sans-serif;
-  } */
+
   #navbar {
     display: flex;
     align-items: center;
@@ -12,9 +8,7 @@
     top: 0;
     width: 100%;
     z-index:1;
-   
 }
-
   #cont {
     display: flex;
     width: 600px;
