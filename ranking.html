@@ -38,9 +38,9 @@ document.querySelector("#navbar").innerHTML=navbar();
 
 import footer from "./component/footer.js";
 document.querySelector("#footer").innerHTML=footer();
+</script>
 
-
-
+<script>
     window.addEventListener("load",()=>{
         getData()
     })
@@ -54,7 +54,7 @@ document.querySelector("#footer").innerHTML=footer();
     let renderDom=(data)=>{
         let container=document.querySelector("#container");
         container.innerHTML=null;
-        data.forEach(({rank,img,country,sign})=>{
+        data.forEach(({rank,img,country})=>{
 
             let ranking=document.createElement("p");
             ranking.innerText=rank;
@@ -68,15 +68,15 @@ document.querySelector("#footer").innerHTML=footer();
             countryn.innerText=country;
             countryn.setAttribute("class","countOrigin")
 
-            let signing=document.createElement("h1");
-            signing.innerText=sign;
-            signing.setAttribute("class","signtodel")
+            // let signing=document.createElement("h1");
+            // signing.innerText=sign;
+            // signing.setAttribute("class","signtodel")
 
 
             let div=document.createElement("div");
             div.setAttribute("class","reankingteam");
 
-            div.append(rank,image,countryn,signing);
+            div.append(rank,image,countryn);
 
             container.append(div);
         })
