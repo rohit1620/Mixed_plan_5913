@@ -336,7 +336,7 @@ font-weight: bold;
 }
 
 #ODI{
-    margin-left:400px;
+    margin-left:350px;
     margin-bottom:10px;
     padding:10px;
     width:200px;
@@ -376,6 +376,7 @@ font-weight: bold;
 
 
 #ODI:focus{
+
     background-color: #9b000d;
     border:0px;
     color:white;

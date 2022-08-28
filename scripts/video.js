@@ -2,7 +2,7 @@
 // {/* <img src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c${241290}/jonny-bairstow-hammered-a-92-b.jpg" alt=""></img> */}
 
 let getData=async()=>{
-  let res=await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=26&q=%20cricket%20video%20Aug%2C2022&key=${"AIzaSyBJOP_SWdYFIkJgZ1PvQOY4YqhUqkPG1Ug"}`);
+  let res=await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=26&q=%20cricket%20video%20Aug%2C2022&key=${"AIzaSyB5QJ7E-LVYFbuxGZ_K_0h9FwLswrm90Ec"}`);
   res=await res.json();
   console.log(res)
   append(res.items)
