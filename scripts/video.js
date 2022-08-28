@@ -2,16 +2,16 @@
 // {/* <img src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c${241290}/jonny-bairstow-hammered-a-92-b.jpg" alt=""></img> */}
 
 let getData=async()=>{
-    let res=await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=26&q=%20cricket%20video%20Aug%2C2022&key=${"AIzaSyBJOP_SWdYFIkJgZ1PvQOY4YqhUqkPG1Ug"}`);
-    res=await res.json();
-    console.log(res)
-    append(res.items)
+  let res=await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=26&q=%20cricket%20video%20Aug%2C2022&key=${"AIzaSyBJOP_SWdYFIkJgZ1PvQOY4YqhUqkPG1Ug"}`);
+  res=await res.json();
+  console.log(res)
+  append(res.items)
 }
-    getData()
-  // `https://www.youtube.com/embed/${videoId}`
-   /* data.forEach((el) => { el.id.videoId/ el.snippet.title */
-    let append=(data)=>{
-        console.log(data)
+  getData()
+// `https://www.youtube.com/embed/${videoId}`
+ /* data.forEach((el) => { el.id.videoId/ el.snippet.title */
+  let append=(data)=>{
+      console.log(data)
 data.forEach(({ id: { videoId }, snippet: { title, thumbnails ,description} }) => {
 let div1 = document.createElement("div");
 let div2 = document.createElement("div");
@@ -32,12 +32,12 @@ div2.append(h3,p)
 div.append(div1, div2);
 
 let video = {
-  title,
-  videoId,
+title,
+videoId,
 };
 
 div.onclick = () => {
-  playVideo(video);
+playVideo(video);
 };
 
 
@@ -50,17 +50,17 @@ let videos=JSON.parse(localStorage.getItem("video"))
 console.log(videos)
 // let right=()=>{
 let iframe = document.createElement("iframe");
- iframe.src =`https://www.youtube.com/embed/${videos.videoId}`
- iframe.allow = "fullscreen";
- let h4 = document.createElement("h4");
+iframe.src =`https://www.youtube.com/embed/${videos.videoId}`
+iframe.allow = "fullscreen";
+let h4 = document.createElement("h4");
 h4.innerText = videos.title;
 document.getElementById("iframe").append(iframe,h4)
 
 // }
 
 let playVideo=(video)=>{
-   localStorage.setItem("video",JSON.stringify(video))
-  window.location.href="video.html"
+ localStorage.setItem("video",JSON.stringify(video))
+window.location.href="video.html"
 }
 
 
@@ -74,8 +74,8 @@ let playVideo=(video)=>{
 //     let data=res.items
 //     console.log(data[0].snippet.title)
 //     data.sort((a,b)=>{
-      
     
+  
 //     })
 //     console.log(data)
 // }

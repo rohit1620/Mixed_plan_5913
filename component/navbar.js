@@ -95,9 +95,9 @@ function navbar() {
       </li></a>
       <li><a href='Ranking.html'><img  src="https://www.cricket.com/svgs/icons/rankings-icon.svg" />     <a style="margin-left: 10px; font-size: 17px; ">Rankings</a>
       </li></a>
-      <li><a href='Archives.html'><img  src="https://www.cricket.com/svgs/GroupArchive.svg" />         <a style="margin-left: 10px; font-size: 17px; ">Archives</a>
+      <li><a href='series.html'><img  src="https://www.cricket.com/svgs/GroupArchive.svg" />         <a style="margin-left: 10px; font-size: 17px; ">Archives</a>
       </li></a>
-      <li><a href='Records.html'><img  src="https://www.cricket.com/svgs/icons/records-icon.svg" />   <a style="margin-left: 10px; font-size: 17px; ">Records</a>
+      <li><a href='Ranking.html'><img  src="https://www.cricket.com/svgs/icons/records-icon.svg" />   <a style="margin-left: 10px; font-size: 17px; ">Records</a>
       </li></a>
       <li><a href='login.html'><img  src="https://www.cricket.com/static/svgs/icons/profile.svg" />    <a style="margin-left: 10px; font-size: 17px; ">Profile</a>
       </li></a>

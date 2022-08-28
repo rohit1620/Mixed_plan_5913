@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./styles/News.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/navbar.css">  
+    <link rel="stylesheet" href="styles/footer.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="container">
+      <!-- Headline of the page -->
+      <h1 id="header">News & Articles</h1>
+      <!-- News for different categeory -->
+      <div id="news-button">
+        <div>
+          <button onclick="latest()" class="button active" autofocus>
+            LATEST
+          </button>
+          <button onclick="news()" class="button">NEWS</button>
+          <button onclick="onthisday()" class="button">ON THIS DAY</button>
+          <button onclick="matchrelated()" class="button">MATCH RELATED</button>
+          <button onclick="features()" class="button">FEATURES</button>
+        </div>
+      </div>
+      <!-- Append news card to the body -->
+      <div id="all-news"></div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module">
+
+  import navbar from './component/navbar.js';
+  // console.log(header());
+  let nav = document.getElementById('navbar')
+  nav.innerHTML = navbar()
+
+
+  import footer from './component/footer.js';
+  //  console.log(footer());
+  document.getElementById('footer').innerHTML = footer()
+ 
+</script>
+<script src="./scripts/News.js"></script>
