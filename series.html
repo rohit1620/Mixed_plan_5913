@@ -7,26 +7,32 @@
     <title>Series</title>
     <link rel="stylesheet" href="series.css" />
     <link rel="stylesheet" href="News.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1 id="header-series">Series</h1>
     <div id="series-container">
       <div id="match-heading">
-        <h3 onclick="matchPart(this.id)" id="upcoming">UPCOMING</h3>
-        <h3 onclick="matchPart(this.id)" id="ongoing">ONGOING</h3>
-        <h3 onclick="matchPart(this.id)" id="completed">COMPLETED</h3>
+        <button onclick="matchPart(this.id)" id="upcoming" class="btn active">
+          UPCOMING
+        </button>
+        <button onclick="matchPart(this.id)" id="ongoing" class="btn">ONGOING</button>
+        <button onclick="matchPart(this.id)" id="completed" class="btn">COMPLETED</button>
       </div>
       <hr />
       <div id="match-categeory">
         <div id="matches">
-          <h3 onclick="allSeries()" id="All">ALL</h3>
-          <h3 onclick="newSeries(this.id)" id="International">INTERNATIONAL</h3>
-          <h3 onclick="newSeries(this.id)" id="Domestic">DOMESTIC</h3>
-          <h3 onclick="newSeries(this.id)" id="Womens">WOMEN'S</h3>
+          <button onclick="allSeries()" id="All" >ALL</button>
+          <button onclick="newSeries(this.id)" id="International">INTERNATIONAL</button>
+          <button onclick="newSeries(this.id)" id="Domestic">DOMESTIC</button>
+          <button onclick="newSeries(this.id)" id="Womens">WOMEN'S</h3>
         </div>
-        <div id="filter">
+        <!-- <div id="filter">
           <button>Filter</button>
-        </div>
+        </div> -->
       </div>
       <hr />
       <div id="play-matches"></div>

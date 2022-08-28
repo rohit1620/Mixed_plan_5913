@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
     <link rel="stylesheet" href="News.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Pacifico&family=Roboto:wght@400;500&family=Ubuntu:wght@300&family=Vollkorn&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
   </head>
@@ -20,11 +18,13 @@
       <!-- News for different categeory -->
       <div id="news-button">
         <div>
-          <button onclick="latest()">LATEST</button>
-          <button onclick="news()">NEWS</button>
-          <button onclick="onthisday()">ON THIS DAY</button>
-          <button onclick="matchrelated()">MATCH RELATED</button>
-          <button onclick="features()">FEATURES</button>
+          <button onclick="latest()" class="button active" autofocus>
+            LATEST
+          </button>
+          <button onclick="news()" class="button">NEWS</button>
+          <button onclick="onthisday()" class="button">ON THIS DAY</button>
+          <button onclick="matchrelated()" class="button">MATCH RELATED</button>
+          <button onclick="features()" class="button">FEATURES</button>
         </div>
       </div>
       <!-- Append news card to the body -->

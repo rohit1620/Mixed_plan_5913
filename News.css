@@ -6,11 +6,7 @@
 #container {
   width: 1076px;
   margin: auto;
-  font-family: "Nanum Gothic", sans-serif;
-  font-family: "Pacifico", cursive;
-  font-family: "Roboto", sans-serif;
-  font-family: "Ubuntu", sans-serif;
-  font-family: "Vollkorn", serif;
+  font-family: "Montserrat";
 }
 #header {
   font-size: 26.8px;
@@ -31,7 +27,7 @@
   justify-items: center;
   justify-content: space-between;
 }
-button {
+.button {
   width: 160px;
   height: 38px;
   padding: 8px 0px 8px 0px;
@@ -43,12 +39,15 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-button:focus {
-  background-color: #db2121;
+.button:focus {
+  background-color: #da1818;
   color: white;
   border: none;
 }
 button {
+  background-color: white;
+}
+.button {
   background-color: white;
 }
 #all-news {

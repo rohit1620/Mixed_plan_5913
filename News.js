@@ -27,7 +27,7 @@ let appendNews = (data) => {
     let n_type = document.createElement("p");
     n_type.innerText = type;
 
-    let head = document.createElement("h3");
+    let head = document.createElement("h4");
     head.innerText = h4;
 
     let desc = document.createElement("p");
@@ -80,3 +80,8 @@ let features = async () => {
   let data = await res.json();
   appendNews(data);
 };
+
+// window.onload = () => {
+//   let x = document.getElementsByClassName("active").focus();
+//   x.style.color = "red";
+// };

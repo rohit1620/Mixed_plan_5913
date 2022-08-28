@@ -1,14 +1,7 @@
 #series-container {
   width: 1076px;
   margin: auto;
-  font-family: "Nanum Gothic", sans-serif;
-  font-family: "Pacifico", cursive;
-  font-family: "Roboto", sans-serif;
-  font-family: "Ubuntu", sans-serif;
-  font-family: "Vollkorn", serif;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  font-family: "Montserrat";
 }
 #header-series {
   width: 1076px;
@@ -19,13 +12,27 @@
   margin-top: 10px;
   display: flex;
 }
-#match-heading > h3 {
+#match-heading > button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 33.3%;
   height: 35px;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0.7;
 }
+/* .up-focus:focus-within {
+  border: 1px solid red;
+} */
+#match-heading > button:focus {
+  border: 3px solid red;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
 #match-categeory {
   width: 88%;
   height: 65px;
@@ -40,34 +47,59 @@
 /* #matches > h3 {
   width: auto;
 } */
-#matches > h3 {
+#matches > button {
   width: auto;
   margin-left: 8px;
   padding: 8px;
-  font-size: 13px;
+  font-size: 12px;
   height: 30px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
 }
-#matches > h3:nth-child(1) {
+#matches > button:nth-child(1) {
   width: 80px;
-  background-color: #db2121;
+  border: 1px solid #db2121;
+  color: black;
+  cursor: pointer;
+}
+#matches > button:nth-child(1):focus {
+  background-color: red;
   color: white;
 }
-#matches > h3:nth-child(2) {
+
+#matches > button:nth-child(2) {
   width: 160px;
-  background-color: rgb(161, 222, 161);
+  border: 1px solid #43b88e;
+  color: black;
+  cursor: pointer;
+}
+
+#matches > button:nth-child(2):focus {
+  background-color: #43b88e;
   color: white;
 }
-#matches > h3:nth-child(3) {
+
+#matches > button:nth-child(3) {
   width: 160px;
-  background-color: grey;
+  border: 1px solid #a4c0c6;
+  color: black;
+  cursor: pointer;
+}
+
+#matches > button:nth-child(3):focus {
+  background-color: #a4c0c6;
   color: white;
 }
-#matches > h3:nth-child(4) {
+#matches > button:nth-child(4) {
   width: 160px;
-  background-color: orange;
+  border: 1px solid #ff8474;
+  color: black;
+  cursor: pointer;
+}
+
+#matches > button:nth-child(4):focus {
+  background-color: #ff8474;
   color: white;
 }
 
@@ -90,6 +122,11 @@
   height: 120px;
   margin-top: 10px;
   display: flex;
+  border: 2px solid #bdd8cd;
+  padding: 8px;
+}
+hr {
+  opacity: 0.7;
 }
 
 #series-card > #match-name {
@@ -118,9 +155,10 @@
   justify-content: center;
   align-items: center;
   width: 25%;
+  color: white;
 }
 #match-date > h5 {
-  font-size: 18px;
+  font-size: 15.5px;
 }
 #match-date > p {
   margin-left: 10px;
