@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Series</title>
+    <link rel="stylesheet" href="series.css" />
+    <link rel="stylesheet" href="News.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="header-series">Series</h1>
+    <div id="series-container">
+      <div id="match-heading">
+        <button onclick="matchPart(this.id)" id="upcoming" class="btn active">
+          UPCOMING
+        </button>
+        <button onclick="matchPart(this.id)" id="ongoing" class="btn">ONGOING</button>
+        <button onclick="matchPart(this.id)" id="completed" class="btn">COMPLETED</button>
+      </div>
+      <hr />
+      <div id="match-categeory">
+        <div id="matches">
+          <button onclick="allSeries()" id="All" >ALL</button>
+          <button onclick="newSeries(this.id)" id="International">INTERNATIONAL</button>
+          <button onclick="newSeries(this.id)" id="Domestic">DOMESTIC</button>
+          <button onclick="newSeries(this.id)" id="Womens">WOMEN'S</h3>
+        </div>
+        <!-- <div id="filter">
+          <button>Filter</button>
+        </div> -->
+      </div>
+      <hr />
+      <div id="play-matches"></div>
+    </div>
+  </body>
+</html>
+<script src="series.js"></script>
