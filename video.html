@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/video.css">
+    
+    <link rel="stylesheet" href="./styles/navbar.css">
+
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>video</title>
+    
+</head>
+<body>
+    <div id="navbar"></div>
+ <div id="big">
+    <div id="red">
+        <div id="iframe"></div>
+    </div>
+</div>
+
+    <div id="conts">
+        <div id="btn">
+            <button onclick="latest()">LATEST</button>
+            <button onclick="fantasy()">FANTASY</button>
+            <button onclick="match()">MATCHRELATED</button>
+            <button onclick="news()">NEWS</button>
+            </div>
+ <div>____________________________________________________________________________________________________________________</div>
+    </div>
+    <!-- Footer Part -->
+<div id="footer">
+    
+  
+</div>
+</body>
+</html>
+ <script type="module">
+
+    import navbar from './component/navbar.js';
+    // console.log(header());
+    let nav = document.getElementById('navbar')
+    nav.innerHTML = navbar()
+
+
+    import footer from './component/footer.js';
+    //  console.log(footer());
+    document.getElementById('footer').innerHTML = footer()
+   
+</script>
+<script src="./scripts/video.js"></script>
+ 
