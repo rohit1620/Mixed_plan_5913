@@ -1,10 +1,10 @@
 
 /* new update */
-* {
+/* * {
     margin: 0px;
     padding: 0px;
-    /* font-family: "Montserrat", sans-serif; */
-  }
+    font-family: "Montserrat", sans-serif;
+  } */
   #navbar {
     display: flex;
     align-items: center;

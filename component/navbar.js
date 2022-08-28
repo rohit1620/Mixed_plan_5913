@@ -3,12 +3,7 @@ function navbar() {
     <div id="logo">
     <img src="https://www.cricket.com/static/cricket.com.svg" />
   </div></a>
-
-
   <div id="cont">
-
-
-
      
      <div class="link">
       <a href='fantasy.html'>
@@ -21,10 +16,6 @@ function navbar() {
     </div>
 </a>
 </div>  
-
-
-
-
  
 <div class="link">
   <a href='criclytics.html'>
@@ -48,7 +39,6 @@ function navbar() {
     </div>
 </a>
 </div> 
-
 <div class="link">
 <a href='series.html'>
     <div class="navdiv">
@@ -59,7 +49,6 @@ function navbar() {
     </div>
 </a>
 </div> 
-
 <div class="link">
 <a href='news.html'>
     <div class="navdiv">
@@ -69,8 +58,6 @@ function navbar() {
     </div>
 </a>
 </div> 
-
-
 <div class="link">
 <a href='video.html'>
     <div class="navdiv">
@@ -79,8 +66,6 @@ function navbar() {
     </div>
 </a>
 </div>
-
-
 <div class="link">
 <a href='players.html'>
     <div class="navdiv">
@@ -91,8 +76,6 @@ function navbar() {
     </div>
 </a>
 </div>
-
-
 <div class="link">
 <a href='teams.html'>
     <div class="navdiv">
@@ -101,20 +84,16 @@ function navbar() {
     </div>
 </a>
 </div>
-
-
 <!-- last div  -->
 <li><div class="lastdiv" onclick="more()">
-
 <a href="#"> <img  src="https://www.cricket.com/svgs/icons/more.svg" />
 <p>more</p> <i class="fas fa-sort-down"></i></a>  
-
 <div class="drop_Down_Bar">
   <ul>
       <li>    <a href='stadium.html'>
         <img src="https://www.cricket.com/svgs/icons/stadium-icon.svg" />     <a style="margin-left: 10px; font-size: 17px; ">stadiums</a>
       </li></a>
-      <li><a href='Rankings.html'><img  src="https://www.cricket.com/svgs/icons/rankings-icon.svg" />     <a style="margin-left: 10px; font-size: 17px; ">Rankings</a>
+      <li><a href='Ranking.html'><img  src="https://www.cricket.com/svgs/icons/rankings-icon.svg" />     <a style="margin-left: 10px; font-size: 17px; ">Rankings</a>
       </li></a>
       <li><a href='Archives.html'><img  src="https://www.cricket.com/svgs/GroupArchive.svg" />         <a style="margin-left: 10px; font-size: 17px; ">Archives</a>
       </li></a>

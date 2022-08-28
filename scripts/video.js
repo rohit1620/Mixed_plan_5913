@@ -64,3 +64,18 @@ let playVideo=(video)=>{
 }
 
 
+
+// btn section
+
+// let latest=async()=>{
+//   let res=await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=26&q=%20cricket%20video%20Aug%2C2022&key=${"AIzaSyBJOP_SWdYFIkJgZ1PvQOY4YqhUqkPG1Ug"}`);
+//     res=await res.json();
+//     console.log(res)
+//     let data=res.items
+//     console.log(data[0].snippet.title)
+//     data.sort((a,b)=>{
+      
+    
+//     })
+//     console.log(data)
+// }

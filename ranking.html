@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css"/> 
+    <link rel="stylesheet" href="./styles/footer.css"/> 
+    <link rel="stylesheet" href="./styles/fan.css"/> 
+   
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1 style="margin-left: 170px;color:rgb(19, 13, 13);margin-top:100px;">Ranking</h1>
+    <button onclick="changeranking(this.id)" id="ODI">ODI</button>
+    <button onclick="changeranking(this.id)" id="TEST">TEST</button>
+    <button onclick="changeranking(this.id)" id="T20">T20</button>
+<div id="teamrank">
+    <p style="margin-left:15px;">RANK</p>
+    <p style="margin-left:310px;">TEAMS</p>
+</div>
+<div id="container"></div>
+
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+
+import navbar from "./component/navbar.js";
+document.querySelector("#navbar").innerHTML=navbar();
+
+import footer from "./component/footer.js";
+document.querySelector("#footer").innerHTML=footer();
+</script>
+<script src="./scripts/ranking.js"></script>
