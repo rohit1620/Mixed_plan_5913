@@ -1,0 +1,46 @@
+   
+/* ===============Footer Part======================================= */
+
+#footer{
+    display: flex;
+    align-items: center;
+    background-color: rgba(23, 33, 50, 255);
+    height: 100px;
+    width: 100%;
+    margin-right: -.8%;
+    margin-left: 0px;
+    }
+    #div_1{
+        margin-left:10vw;
+        font-family: Montserrat;
+        color: white;
+    }
+    #div_1 p{
+        font-size:12px;
+    }
+    
+    #div_2{
+        margin-left:10vw;
+        font-family: Montserrat;
+        }
+        #div_2 a{
+            color: white; 
+            text-decoration:none;
+            margin-right:10px;
+            font-size:14px;
+        } 
+        #div_2 a:hover{
+            color:orangered;
+    
+        }
+    #div_3{
+        margin-left:10vw;
+        font-family: Montserrat;
+        color: rgb(218, 216, 216);
+
+    }
+    #flex{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }

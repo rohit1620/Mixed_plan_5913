@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>teams</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+     
+        *{
+            font-family: 'Montserrat';
+        }
+#container{
+    margin: auto;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+input{
+    border:solid lightgrey;
+    height: 33px;
+    width: 88%;
+    margin-top: 60px;
+    margin-left: 40px;
+    border-radius: 5px;
+}    
+#box{
+ display: flex;
+ gap:50%;
+ padding-left: 140px;
+ text-decoration:underline;
+ height: 40px;
+ padding-top: 50px;
+ color: black;
+}
+a h4{
+    color: black;
+    text-decoration: underline;
+}
+
+#append{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    width:100%;
+    background-color: white;
+    gap:15px;
+    height:auto;  
+    margin: auto;
+        }
+        #append img{
+            width:220px;
+            height:110px;
+        }
+        #append>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+            height: 210px;
+            text-align: center;
+        }
+     .mainbox p{
+        font-size: 12px;
+       color: rgb(169, 168, 168);
+     }
+     .mainbox h4{
+        font-weight:120px;
+        font-size: 13px;
+        color:#D64B4B;
+     }
+     .mainbox h3{
+        font-weight: 500px;
+        font-size: 14px;
+
+     }
+        .boxdiv{
+            display: flex;
+            justify-content: space-around;  
+            border: solid lightgrey;
+            height: 36px;
+        }
+       
+        .mainbox{
+           
+            text-align: center;
+        }
+        .boxdiv>div{
+           
+            padding-top:-2px
+        }
+        .boxdiv>div>div{
+         padding-bottom: 8px;
+          height:12px;
+        }
+        .mainbox p,h4{
+         margin: 0%;
+        }
+        #searchbox{
+            display: flex;
+        }
+        #append2 img{
+            width:220px;
+            height:110px;
+        }
+        #head2 h4{
+           height: 23px;
+          
+           padding-bottom:10px;
+           padding-top:10px;
+           font-size: 16px;
+        }
+        #head1 h4{
+           height: 23px;
+          
+           padding-bottom:10px;
+           padding-top:10px;
+           font-size: 16px;
+        }
+    #append2{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    width:100%;
+    background-color: white;
+    gap:15px;
+    height:auto;  
+    margin: auto;
+        }
+        #append2>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+            height: 165px;
+            text-align: center;
+        }
+        .mainbox2 h3{
+        font-weight: 500px;
+        font-size: 14px;
+     }
+     
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="container">
+       <input type="text" id="search" placeholder="Team Search">
+      
+        <div id="box">
+            <h4>INTERNATIONAL</h4>
+            <a href="otherleague.html"><h4>OTHER LEAGUES</h4></a>
+        </div>
+        <div id="head1">
+        <h4>MEN'S</h4>
+          </div>
+        <div id="append"></div>
+        
+        <div id="head2">
+        <h4>WOMEN'S</h4>
+    </div>
+        <div id="append2"></div>
+    </div>
+ <div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+
+    import navbar from './component/navbar.js';
+    // console.log(header());
+    let nav = document.getElementById('navbar')
+    nav.innerHTML = navbar()
+
+
+    import footer from './component/footer.js';
+    //  console.log(footer());
+    document.getElementById('footer').innerHTML = footer()
+   
+</script>
+<script>
+// ______________________________________________________________
+var data2=[
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F1_actionshot_safari.jpg&w=1920&q=75",
+        heading:"Australia",
+        Test:"1",
+        ODI:"5",
+       T20:"6"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F1188_actionshot_safari.jpg&w=1920&q=75",
+        heading:"Afganistan",
+        Test:"-",
+        ODI:"10",
+       T20:"9"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F2_actionshot_safari.jpg&w=1920&q=75",
+        heading:"Bangladesh",
+        Test:"9",
+        ODI:"7",
+       T20:"10"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F3_actionshot_safari.jpg&w=1920&q=75",
+        heading:"England",
+        Test:"4",
+        ODI:"2",
+       T20:"2"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F4_actionshot_safari.jpg&w=1920&q=75",
+        heading:"India",
+        Test:"2",
+        ODI:"3",
+       T20:"1"
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F5_actionshot_safari.jpg&w=1920&q=75",
+        heading:"New Zealand",
+        Test:"5",
+        ODI:"1",
+       T20:"5"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F6_actionshot_safari.jpg&w=1920&q=75",
+        heading:"Pakistan",
+        Test:"6",
+        ODI:"4",
+       T20:"3"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F7_actionshot_safari.jpg&w=1920&q=75",
+        heading:"South Africa",
+        Test:"3",
+        ODI:"4",
+       T20:"6"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F8_actionshot_safari.jpg&w=1920&q=75",
+        heading:"West Indies",
+        Test:"7",
+        ODI:"8",
+       T20:"8"
+
+    },
+    {
+        image_url1:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F9_actionshot_safari.jpg&w=1920&q=75",
+        heading:"Australia",
+        Test:"8",
+        ODI:"9",
+       T20:"7"
+
+    },
+    
+];
+
+// _____________________________________________________
+let card=document.querySelector("#append")
+data2.forEach(function(car){
+
+let div2=document.createElement("div");
+div2.setAttribute("class","mainbox")
+
+let headdiv=document.createElement("div")
+let nam1=document.createElement("h3");
+nam1.innerText=car.heading;
+headdiv.append(nam1);
+
+let imgdiv=document.createElement("div")
+let ima=document.createElement("img");
+ima.setAttribute("src",car.image_url1);
+imgdiv.append(ima);
+
+
+let pdiv=document.createElement("div")
+let icc=document.createElement("p")
+icc.innerText="ICC Ranking";
+pdiv.append(icc);
+
+let boxdiv=document.createElement("div")
+boxdiv.setAttribute("class","boxdiv")
+
+
+
+let box1=document.createElement("div");
+let nam3=document.createElement("h4")
+nam3.setAttribute("class","nam3")
+nam3.innerText=car.Test
+let box11=document.createElement("div")
+box11.append(nam3);
+let test=document.createElement("p")
+test.innerText="Test";
+let box12=document.createElement("div")
+box12.append(test)
+box1.append(box11,box12);
+
+let box2=document.createElement("div")
+let nam4=document.createElement("h4")
+nam4.setAttribute("class","nam4")
+nam4.innerText=car.T20
+let box21=document.createElement("div")
+box21.append(nam4);
+let t20=document.createElement("p")
+t20.innerText="T20";
+let box22=document.createElement("div")
+box22.append(t20);
+box2.append(box21,box22);
+
+
+let box3=document.createElement("div")
+let nam5=document.createElement("h4")
+nam5.setAttribute("class","nam5")
+nam5.innerText=car.ODI
+let box31=document.createElement("div")
+box31.append(nam5);
+let odi=document.createElement("p")
+odi.innerText="ODI";
+let box32=document.createElement("div")
+box32.append(odi);
+box3.append(box31,box32);
+
+
+boxdiv.append(box1,box3,box2)
+
+div2.append(headdiv,imgdiv,pdiv,boxdiv)
+card.append(div2)
+})
+
+
+
+var data3=[
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1920&q=75",
+       title:"Australia Women"
+    },
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1920&q=75",
+       title:"England Women",
+    },
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1920&q=75",
+       title:"India Women",
+    },
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1920&q=75",
+       title:"New Zealand Women"
+    },
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1920&q=75",
+       title:"Pakistan Women"
+    },
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1920&q=75",
+       title:"South African Women"
+    },
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=%2Fpngs%2Fteam-web.jpg&w=1920&q=75",
+       title:"Sri Lanka Women"
+    },
+    {
+        image_url2:"https://www.cricket.com/_next/image?url=https%3A%2F%2Fimages.cricket.com%2Fteams%2F1135_actionshot_safari.jpg&w=1920&q=75",
+       title:"West Indies Women"
+    }
+];
+let card1=document.querySelector("#append2")
+data3.forEach(function(car){
+
+let div2_1=document.createElement("div");
+div2_1.setAttribute("class","mainbox2")
+
+let headdiv1=document.createElement("div")
+let nam1_1=document.createElement("h3");
+nam1_1.innerText=car.title;
+headdiv1.append(nam1_1);
+
+let imdiv=document.createElement("div")
+let img=document.createElement("img");
+img.setAttribute("src",car.image_url2);
+imdiv.append(img);
+
+
+div2_1.append(headdiv1,imdiv)
+card1.append(div2_1)
+
+})
+
+
+
+
+
+
+
+
+</script>
+
+

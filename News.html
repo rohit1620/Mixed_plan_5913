@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
-    <link rel="stylesheet" href="News.css" />
+    <link rel="stylesheet" href="./styles/News.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/navbar.css">  
+    <link rel="stylesheet" href="styles/footer.css">
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="container">
       <!-- Headline of the page -->
       <h1 id="header">News & Articles</h1>
@@ -30,6 +33,20 @@
       <!-- Append news card to the body -->
       <div id="all-news"></div>
     </div>
+    <div id="footer"></div>
   </body>
 </html>
-<script src="News.js"></script>
+<script type="module">
+
+  import navbar from './component/navbar.js';
+  // console.log(header());
+  let nav = document.getElementById('navbar')
+  nav.innerHTML = navbar()
+
+
+  import footer from './component/footer.js';
+  //  console.log(footer());
+  document.getElementById('footer').innerHTML = footer()
+ 
+</script>
+<script src="./scripts/News.js"></script>
